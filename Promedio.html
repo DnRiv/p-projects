@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>¿Que calificación necesito?</title>
+  </head>
+  <body id="body" onload="ref_input()">
+    <p><strong>Calcula tu Calificación.</strong></p>
+    <p>Ingresa porcentaje de ponderación y tus notas. Usar punto como separador decimal.</p>
+    <p>Ingresa Nota necesaria para <strong>Aprobar</strong>.
+      <input type="number" id="nota_referencia" onchange="ref_input()" value="4" step="any" min="0" max="7" onfocusout=input_cero(ref) onkeyup="input_aprobar(ref)" style="width : 63px; heigth : 16px">
+    </p>
+
+    <p>Ponderación&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notas</p>
+    <p>
+      <input type="number" id="ponderacion_1" value="0" min="0" max="100" onfocusout="input_cero(pro_1)" onchange="ponderacion()" onkeyup="input_0_100(pro_1)">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" id="nota_1" value="0" step="any" min="0" max="7" style="width : 63px; heigth : 16px" onkeyup="input_0_7(not_1)">
+    </p>
+    <p>
+      <input type="number" id="ponderacion_2" value="0" min="0" max="100" onfocusout="input_cero(pro_2)" onchange="ponderacion()" onkeyup="input_0_100(pro_2)">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" id="nota_2" value="0" step="any" min="0" max="7" style="width : 63px; heigth : 16px" onkeyup="input_0_7(not_2)">
+    </p>
+    <p>
+      <input type="number" id="ponderacion_3" value="0" min="0" max="100" onfocusout="input_cero(pro_3)" onchange="ponderacion()" onkeyup="input_0_100(pro_3)">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" id="nota_3" value="0" step="any" min="0" max="7" style="width : 63px; heigth : 16px" onkeyup="input_0_7(not_3)">
+    </p>
+    <p> <output id="ponderacion_4" value=""></output> </p>
+    <p><br></br></p>
+    <p><input type="button" id="boton_1" value="Calcular" onclick="" style="position:absolute;top:270px;left:106px;"></p>
+    <hr>
+    <p id="resultado"></p>
+
+    <p><script src="Nota.js"></script></p>
+
+  </body>
+</html>
