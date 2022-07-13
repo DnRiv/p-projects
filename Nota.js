@@ -14,7 +14,6 @@ var not_3= document.getElementById("nota_3");
 var ref = document.getElementById("nota_referencia");
 var b = document.getElementById("body");
 
-
 ref.addEventListener("onchange",ref_input);
 b.addEventListener("onload",ref_input);
 
