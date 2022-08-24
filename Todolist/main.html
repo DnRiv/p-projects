@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Daily To do List</title>
+  </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="header">
+                    <h1>To Do List</h1>
+                </div>
+                <div class="sidebar" id="daySelect">
+                    <button id="mondayButton"><i class="fa-regular fa-calendar"></i>  Monday </button>
+                    <button id="tuesdayButton"><i class="fa-regular fa-calendar"></i>  Tuesday</button>
+                    <button id="wednesdayButton"><i class="fa-regular fa-calendar"></i>  Wednesday</button>
+                    <button id="thursdayButton"><i class="fa-regular fa-calendar"></i>  Thursday</button>
+                    <button id="fridayButton"><i class="fa-regular fa-calendar"></i>  Friday</button>
+                </div>
+            
+            <div id="add-container">
+                <form action="" id="formitnew">
+                    <input type="text" id="itnew" autocomplete="off" placeholder="New Task ...">
+                    <input type="time" id="timePicker">
+                    <select name= "" id="slist" value=""></select>
+                    <i id="addTaskButton"class="fas fa-plus-circle"></i>
+                    <i id="sortButton" class="fa-solid fa-circle-down"></i>
+                </form>
+                <div id="todos"></div>
+            </div>
+            <div class="footer">
+                <div id="lists"></div>
+            </div>
+            </div>
+
+    </main>
+    <script src="index.js" ></script>
+    </body>
+</html>
