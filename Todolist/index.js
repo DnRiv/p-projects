@@ -125,17 +125,23 @@ function refreshUI(){
 
     listFilter('Monday',hide,0);
 
-    if(d=== 0){
-        listFilter('Monday',hide,0);
-    }if(d=== 1){
-        listFilter('Tuesday',hide,1);
-    }if(d=== 2){
-        listFilter('Wednesday',hide,2);
-    }if(d=== 3){
-        listFilter('Thursday',hide,3);
-    }if(d=== 4){
-        listFilter('Friday',hide,4);
-    }  
+    switch(d) {
+  case 0:
+    listFilter('Monday',hide,0);
+    break;
+  case 1:
+    listFilter('Tuesday',hide,1);
+    break;
+  case 2:
+    listFilter('Wednesday',hide,2);
+    break;
+  case 3:
+    listFilter('Thursday',hide,3);
+    break;
+  case 4:
+    listFilter('Friday',hide,4);
+    break;
+}
 }
 
 function renderTodos(){
