@@ -118,14 +118,14 @@ addTaskButton.addEventListener('click',e =>{
 });
 
 function refreshUI(){
-    var d=selectList.selectedIndex;
+    var daySelectList=selectList.selectedIndex;
 
     renderTodos();
     renderLists();
 
     listFilter('Monday',hide,0);
 
-    switch(d) {
+    switch(daySelectList) {
   case 0:
     listFilter('Monday',hide,0);
     break;
@@ -211,6 +211,7 @@ function listFilter (day,act,arrDay){
     for(i=0;i<td.length;i++){
         if(td[i].attributes[2].value != day){
         td[i].attributes[3].value =act;
+        selectList.selectedIndex = arrDay;
         }
         else{ td[i].attributes[3].value =show;
             selectList.selectedIndex = arrDay;
